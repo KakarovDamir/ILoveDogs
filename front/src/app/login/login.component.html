@@ -1,0 +1,24 @@
+<div class="top"></div>
+<div class="parent">
+    <div class="container">
+      <img src="../assets/logo.png" alt="Web Player Logo" class="webplayer-logo">
+      <h2>Log in to I Love Dogs</h2>
+      <div class="login-box">
+        <form action="#">
+          <div class="input-box">
+            <p>Email address or username</p>
+            <input type="email" [(ngModel)]="loginObj.Email" name="Email" required>
+          </div>
+          <div class="input-box">
+            <p>Password</p>
+            <input type="password" [(ngModel)]="loginObj.Password" name="Password" required>
+          </div>
+          <button type="button" class="btn" (click)="onLogin()">Enter</button>
+        </form>
+        <div class="signup-link">
+            <p>No account?</p>
+            <a [routerLink]="['/signup']">Registration in I Love Dogs</a>
+        </div>
+    </div>
+  </div>
+  

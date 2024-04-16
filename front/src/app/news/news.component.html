@@ -1,0 +1,32 @@
+<div *ngIf="loaded; else loading">
+    <div class="news">
+        <h1>News</h1>
+        <ul>
+            <li *ngFor="let news of newsList">
+                    <p class="title">{{news.title}}</p>
+                    <p class="content">{{news.content}}</p>
+                    <p class="date">{{news.date}}</p>
+                    <img src="{{news.url}}" alt="photo">
+            </li>
+        </ul>
+    </div>
+    <h1 class="hero-h1">Dog Heroes</h1>
+    <div class="heroes">
+        <ul >
+            <li *ngFor="let hero of heroes">
+                <img src="{{hero.url}}" alt="photo">
+                <div>
+                    <p class="hero-title">{{hero.title}}</p>
+                    <p class="hero-content"> {{hero.content}}</p>
+                    <p class="hero-source">{{hero.source}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div class="loader"></div>
+</ng-template>
+
+<app-scroll-to-top-button></app-scroll-to-top-button>

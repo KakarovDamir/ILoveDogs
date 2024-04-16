@@ -1,0 +1,31 @@
+<div class="container" *ngIf="loaded; else loading">
+    <div class="input">
+        <input type="text" placeholder="Quick breed search" [(ngModel)]="searchQuery" (input)="search()">
+    </div>
+    <div *ngIf="searched">
+        <ul  style="color: white;">
+            <li *ngFor="let item of filteredItems" >
+                <a [routerLink]="['/search', item.name]">
+                    <img src="{{item.image_link}}" alt="photo">
+                    <p>{{item.name}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="!searched">
+        <ul  style="color: white;">
+            <li *ngFor="let parameter of parameters" >
+                <a [routerLink]="['/search', parameter.name]">
+                    <img src="{{parameter.image_link}}" alt="photo">
+                    <p>{{parameter.name}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div class="loader"></div>
+</ng-template>
+
+<app-scroll-to-top-button></app-scroll-to-top-button>

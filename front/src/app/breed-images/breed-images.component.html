@@ -1,0 +1,13 @@
+<div class="breed-container" *ngIf="loaded; else loading">
+    <h2>{{breedName}}</h2>
+    <ul>
+        <li *ngFor="let image of images">
+            <img src="{{image}}" alt="photo">
+        </li>
+    </ul>
+</div>
+<ng-template #loading>
+    <div class="loader"></div>
+</ng-template>
+
+<app-scroll-to-top-button></app-scroll-to-top-button>

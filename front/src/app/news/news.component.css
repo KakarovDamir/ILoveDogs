@@ -1,0 +1,116 @@
+*{
+    color: white;
+}
+.news img{
+    position:static;
+    width: 30%;
+    margin-left: 65%;
+    margin-top: -15%;
+}
+.news h1{
+    margin-left: 6%;
+    font-size: 250%;
+    text-decoration: underline;
+}
+.news ul{
+    list-style: none;
+}
+.news ul li{
+    margin-left: 3%;
+    margin-top: 2%;
+    border: 1px solid white;
+    padding: 2%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(38, 32, 32);
+}
+.title{
+    font-size: 205%;
+    width: 60%;
+    font-weight: bold;
+}
+.content{
+    width: 60%;
+    font-size: 130%;
+    margin-top: -1%;
+    color: rgb(166, 166, 166);
+}
+.date{
+    font-size: large;
+    color: rgb(134, 134, 134);
+    text-decoration: underline;
+}
+.hero-h1{
+    margin-left: 6%;
+    font-size: 250%;
+    text-decoration: underline;
+}
+
+.heroes{
+    width: 100%;
+    margin-top: -3%;
+}
+.heroes ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.heroes li{
+    background-color: rgb(38, 32, 32);
+    margin-left: 3%;
+    margin-top: 2%;
+    border: 1px solid white;
+    padding: 2%;
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgb
+}
+.heroes img{
+    width: 90%;
+    margin-left: 4%;
+    border-radius: 15px;
+}
+.hero-title{
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+}
+.hero-content{
+    font-size: 150%;
+    text-align: center;
+    color: rgb(164, 174, 174);
+}
+.hero-source{
+    text-align: end;
+    color: gray;
+}
+.loader {
+    margin-left: 48%;
+    margin-top: 15%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 50%;
+    background:
+      linear-gradient(0deg ,rgba(255, 255, 255, 0.5) 30%,#0000 0 70%,rgb(255, 255, 255) 0) 50%/8% 100%,
+      linear-gradient(90deg,rgba(255, 255, 255, 0.25) 30%,#0000 0 70%,rgba(255, 255, 255, 0.75) 0) 50%/100% 8%;
+    background-repeat: no-repeat;
+    animation: l23 1s infinite steps(12);
+  }
+  .loader::before,
+  .loader::after {
+     content: "";
+     grid-area: 1/1;
+     border-radius: 50%;
+     background: inherit;
+     opacity: 0.915;
+     transform: rotate(30deg);
+  }
+  .loader::after {
+     opacity: 0.83;
+     transform: rotate(60deg);
+  }
+  @keyframes l23 {
+    100% {transform: rotate(1turn)}
+  }

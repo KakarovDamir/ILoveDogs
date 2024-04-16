@@ -1,0 +1,105 @@
+<div *ngIf="loaded; else loading">
+    <div class="container">
+        <h1>{{item[0].name}}</h1>
+        <img src="{{item[0].image_link}}" alt="photo">
+    </div>
+    <div>
+        <table style="width:50%" >
+            <tr>
+                <th>Description</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>Level of compatibility with children</td>
+                <td>{{item[0].good_with_children}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of compatibility with other dogs</td>
+                <td>{{item[0].good_with_other_dogs}}/5</td>
+            </tr>
+            <tr>
+                <td>Amount of shedding</td>
+                <td>{{item[0].shedding}}/5</td>
+            </tr>
+            <tr>
+                <td>Grooming needs</td>
+                <td>{{item[0].grooming}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of drooling</td>
+                <td>{{item[0].drooling}}/5</td>
+            </tr>
+            <tr>
+                <td>Length of the coat</td>
+                <td>{{item[0].coat_length}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of compatibility with strangers</td>
+                <td>{{item[0].good_with_strangers}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of playfulness</td>
+                <td>{{item[0].playfulness}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of protectiveness</td>
+                <td>{{item[0].protectiveness}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of trainability</td>
+                <td>{{item[0].trainability}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of energy</td>
+                <td>{{item[0].energy}}/5</td>
+            </tr>
+            <tr>
+                <td>Level of barking</td>
+                <td>{{item[0].barking}}/5</td>
+            </tr>
+            <tr>
+                <td>Minimum life expectancy</td>
+                <td>{{item[0].min_life_expectancy}}</td>
+            </tr>
+            <tr>
+                <td>Maximum life expectancy</td>
+                <td>{{item[0].max_life_expectancy}}</td>
+            </tr>
+            <tr>
+                <td>Maximum height for males</td>
+                <td>{{item[0].max_height_male}}</td>
+            </tr>
+            <tr>
+                <td>Maximum height for females</td>
+                <td>{{item[0].max_height_female}}</td>
+            </tr>
+            <tr>
+                <td>Maximum weight for males</td>
+                <td>{{item[0].max_weight_male}}</td>
+            </tr>
+            <tr>
+                <td>Maximum weight for females</td>
+                <td>{{item[0].max_weight_female}}</td>
+            </tr>
+            <tr>
+                <td>Minimum height for males</td>
+                <td>{{item[0].min_height_male}}</td>
+            </tr>
+            <tr>
+                <td>Minimum height for females</td>
+                <td>{{item[0].min_height_female}}</td>
+            </tr>
+            <tr>
+                <td>Minimum weight for males</td>
+                <td>{{item[0].min_weight_male}}</td>
+            </tr>
+            <tr>
+                <td>Minimum weight for females</td>
+                <td>{{item[0].min_weight_female}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<ng-template #loading>
+    <div class="loader"></div>
+</ng-template>

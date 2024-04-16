@@ -1,0 +1,41 @@
+<img class="doberman"  src="https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1660957140_4-kartinkin-net-p-doberman-oboi-na-rabochii-stol-krasivo-6.jpg" alt="">
+<div class="container" >
+    <h1>Welcome to ILoveDogs</h1>
+    <p>
+        Your ideal source of information about dogs! This app is for<br> 
+        everyone who loves and appreciates these beautiful animals.<br>
+        Here you will find a huge amount of photos, information about<br>
+        breeds, fun facts and much more about the world of dogs.<br>
+        <br>
+        Search for your favorite breed, learn interesting facts or<br>
+        just enjoy watching photos – ILoveDogs willhelp you plunge <br>
+        into the wonderful world of dogs. Let's share our love for <br>
+        these wonderful creatures together and create the friendliest <br>
+        community of dog lovers!"<br>
+</div>
+
+<div class="random-img" >
+    <h2>Random images:  <button (click)="getRandomDog()" class="fetch-button">Change</button></h2>
+    <p>{{breed}}</p>
+    <a class="link" [routerLink]="['/home', breed]">Show more</a>
+    <img *ngIf="randomDog" src="{{randomDog.message}}" alt="photo">
+</div>
+
+
+<div class="random-fact">
+    <h2>Random facts: <button (click)="getRandomFact()" class="fetch-button">Change</button></h2>
+    <p *ngIf="randomFact">{{randomFact.facts}}</p>
+</div>
+
+
+<footer class="footer">
+    <div class="container2">
+        <h2>Developer:</h2>
+        <h3>Kakarov Damir</h3>
+        <a href="https://www.instagram.com/damir_k_e">Instagram</a> |
+        <a href="https://wa.me/+77057158338">WhatsApp</a>
+        <p>© 2024 ILoveDogs.</p>
+    </div>
+</footer>
+
+<app-scroll-to-top-button></app-scroll-to-top-button>

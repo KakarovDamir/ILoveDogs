@@ -1,0 +1,95 @@
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.input input{
+    width: 30%;
+    height: 60px;
+    padding-left: 25px;
+    border-radius: 30px;
+    font-size: 30px;
+    border: none;
+    box-shadow: 0 0px 20px 2px rgb(240, 3, 3);
+    background-color: #11111100;
+    color: white;
+    outline: none; 
+    font-family:fantasy;
+}
+.input input::after{
+    border: none;
+}
+
+ul{
+    list-style: none;
+    font-family: fantasy;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li{
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width:200px;
+    height: 320px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(23, 22, 22);
+    color: rgb(124, 2, 2);
+}
+
+ul li p{
+    text-align: center;
+    font-size: 25px;
+}
+
+ul li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.loader {
+    margin-left: 48%;
+    margin-top: 15%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 50%;
+    background:
+      linear-gradient(0deg ,rgba(255, 255, 255, 0.5) 30%,#0000 0 70%,rgb(255, 255, 255) 0) 50%/8% 100%,
+      linear-gradient(90deg,rgba(255, 255, 255, 0.25) 30%,#0000 0 70%,rgba(255, 255, 255, 0.75) 0) 50%/100% 8%;
+    background-repeat: no-repeat;
+    animation: l23 1s infinite steps(12);
+  }
+  .loader::before,
+  .loader::after {
+     content: "";
+     grid-area: 1/1;
+     border-radius: 50%;
+     background: inherit;
+     opacity: 0.915;
+     transform: rotate(30deg);
+  }
+  .loader::after {
+     opacity: 0.83;
+     transform: rotate(60deg);
+  }
+  @keyframes l23 {
+    100% {transform: rotate(1turn)}
+  }

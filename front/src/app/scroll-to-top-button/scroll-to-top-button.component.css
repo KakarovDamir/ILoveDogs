@@ -1,0 +1,21 @@
+button {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #fdfcfc;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 35px;
+  }
+  
+  button:hover {
+    background-color: #9f9c9c;
+  }
+  
